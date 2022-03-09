@@ -1,0 +1,41 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "web-test-runner \"src/**/*.test.jsx\"",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint 'src/**/*.{js,jsx}' --max-warnings=0",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@snowpack/plugin-sass": "^1.4.0",
+    "@snowpack/plugin-webpack": "^3.0.0",
+    "@snowpack/web-test-runner-plugin": "^0.2.2",
+    "@testing-library/react": "^11.2.6",
+    "@web/test-runner": "^0.13.3",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.0",
+    "snowpack": "3.2.2",
+    "snowpack-plugin-copy": "^1.0.1"
+  }
+}
